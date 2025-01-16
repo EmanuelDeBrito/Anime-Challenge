@@ -15,7 +15,7 @@ export const Hero = ({ title, description, background, backgroundTitle, backgrou
             </div>
 
             <div 
-                className="w-full h-[400px] rounded overflow-hidden" 
+                className="w-full h-[400px] rounded overflow-hidden bg-center bg-cover transition-all cursor-pointer hover:scale-105" 
                 style={{ backgroundImage: 'url('+ background +')' }}
             >
                 <div className="flex flex-col justify-end h-[400px] p-8 bg-black/50">
