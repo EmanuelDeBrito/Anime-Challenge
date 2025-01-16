@@ -6,6 +6,7 @@ body{
   max-width: 1200px;
   margin: auto;
   background-color: #06090F;
+  box-sizing: border-box;
 }
 
 .inter{
@@ -14,4 +15,8 @@ body{
 
 .rubik{
   font-family: 'Rubik';
+}
+
+.poppins{
+  font-family: 'Poppins';
 }

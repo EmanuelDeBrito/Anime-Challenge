@@ -9,7 +9,7 @@ export const Header = () => {
     const [search, setSearch] = useState('');
 
     return(
-        <header className="flex items-center py-10">
+        <header className="flex items-center pt-10">
             <div className="flex-1">
                 <Logo />
             </div>
