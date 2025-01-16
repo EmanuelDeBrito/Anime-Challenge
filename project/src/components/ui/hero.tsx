@@ -18,7 +18,7 @@ export const Hero = ({ title, description, background, backgroundTitle, backgrou
                 className="w-full h-[400px] rounded overflow-hidden bg-center bg-cover transition-all cursor-pointer hover:scale-105" 
                 style={{ backgroundImage: 'url('+ background +')' }}
             >
-                <div className="flex flex-col justify-end h-[400px] p-8 bg-black/50">
+                <div className="flex flex-col justify-end h-[400px] p-8 bg-gradient-to-t from-black/100 to-black/30">
                     <h2 className="text-[36px] text-white font-semibold uppercase rubik">{backgroundTitle}</h2>
                     <p className="w-[571px] mt-2 text-[18px] text-[#BFBFBF] font-400 inter">Como relatado anteriormente, a franquia baseada no mangá escrito por ONE e ilustrado por Yusuke Murata, One Punch Man, divulgou um comunicado confirmando a produção de uma terceira temporada da adaptação para o anime […]</p>
                 </div>

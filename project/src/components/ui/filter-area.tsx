@@ -7,8 +7,8 @@ export const FilterArea = () => {
     const [selected, setSelected] = useState("Todos");
 
     return(
-        <section className="flex flex-col gap-3">
-            <div className="flex-1 flex items-center gap-[30px] mt-[64px] mb-6 overflow-x-hidden">
+        <section className="flex flex-col gap-3 mt-[64px]">
+            <div className="flex-1 flex items-center gap-[30px] mb-6 overflow-x-hidden">
                 <FilterItem 
                     label="Todos"
                     selected={selected}

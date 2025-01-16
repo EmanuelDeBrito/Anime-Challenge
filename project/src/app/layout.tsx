@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { Inter, Rubik, Poppins } from "next/font/google";
 import "./globals.css";
+import { Header } from "@/components/ui/header";
+import { Footer } from "@/components/ui/footer";
 
 const getInter = Inter();
 
@@ -22,7 +24,9 @@ export default function RootLayout({
   return (
     <html lang="pt-br">
       <body className={`${getInter} ${getRubik} ${getPoppins} antialiased`}>
+        <Header />
         {children}
+        <Footer />
       </body>
     </html>
   );

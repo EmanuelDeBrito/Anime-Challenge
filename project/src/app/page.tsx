@@ -2,8 +2,6 @@ import { Button } from "@/components/ui/button"
 import { CardArea } from "@/components/ui/card-area"
 import { CardItem } from "@/components/ui/card-item"
 import { FilterArea } from "@/components/ui/filter-area"
-import { Footer } from "@/components/ui/footer"
-import { Header } from "@/components/ui/header"
 import { Hero } from "@/components/ui/hero"
 import { LatestData } from "@/data/LatestData"
 import { RecentData } from "@/data/RecentData"
@@ -11,7 +9,6 @@ import { RecentData } from "@/data/RecentData"
 const Page = () => {
     return(
         <div>
-            <Header />
             <FilterArea />
             <Hero 
                 title="Últimas novidades"
@@ -47,7 +44,6 @@ const Page = () => {
                     ))}
                 </CardArea>
             </section>
-            <Footer />
         </div>
     )
 }

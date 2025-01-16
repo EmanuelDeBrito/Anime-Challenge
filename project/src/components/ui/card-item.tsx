@@ -11,9 +11,9 @@ export const CardItem = ({ data }: Props) => {
                 className="w-full h-[254px] rounded-xl bg-cover bg-center cursor-pointer overflow-hidden" 
                 style={{ backgroundImage: 'url('+ data.image +')' }}
             >
-                <div className="flex justify-center items-end w-full h-full pb-6 bg-black/60">
+                <div className="flex justify-center items-end w-full h-[256px] bg-gradient-to-t from-black/100 to-black/0">
                     {data.episode && 
-                        <span className="text-[18px] text-[#BFBFBF] inter">{data.episode}</span>
+                        <span className="mb-6 text-[18px] text-[#BFBFBF] inter">{data.episode}</span>
                     }
                 </div>
             </div>
