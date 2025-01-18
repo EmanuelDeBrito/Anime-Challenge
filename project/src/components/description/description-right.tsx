@@ -9,8 +9,8 @@ type Props = {
 
 export const DescriptionRight = ({ duration, studio, genre, sinopse }: Props) => {
     return(
-        <div className="flex-1 flex flex-col gap-10">
-            <div className="flex flex-col gap-[9px]">
+        <div className="flex-1 flex flex-col gap-10 md:flex-row md:gap-8 lg:flex-col">
+            <div className="flex flex-col gap-[9px] md:flex-1">
                 <DescriptionItem 
                     title="Duração:"
                     description={duration}                
@@ -25,7 +25,7 @@ export const DescriptionRight = ({ duration, studio, genre, sinopse }: Props) =>
                 />
             </div>
 
-            <div>
+            <div className="md:w-[300px] lg:w-full">
                 <DescriptionItem 
                     title="Sinopse:"
                     description={sinopse}

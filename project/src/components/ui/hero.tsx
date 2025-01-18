@@ -10,17 +10,17 @@ export const Hero = ({ title, description, background, backgroundTitle, backgrou
     return(
         <section className="mt-[64px]">
             <div className="flex flex-col gap-2 mb-[40px]">
-                <h1 className="text-[36px] text-white font-400 rubik">{title}</h1>
-                <p className="text-[18px] text-[#BFBFBF] font-400 inter">{description}</p>
+                <h1 className="text-[24px] text-white font-400 rubik lg:text-[36px]">{title}</h1>
+                <p className="text-[14px] text-[#BFBFBF] font-400 inter lg:text-[18px]">{description}</p>
             </div>
 
             <div 
-                className="w-full h-[400px] rounded overflow-hidden bg-center bg-cover transition-all cursor-pointer hover:scale-105" 
+                className="w-full h-[180px] rounded overflow-hidden bg-center bg-cover transition-all cursor-pointer hover:scale-105 md:h-[300px] lg:h-[400px]" 
                 style={{ backgroundImage: 'url('+ background +')' }}
             >
-                <div className="flex flex-col justify-end h-[400px] p-8 bg-gradient-to-t from-black/100 to-black/30">
-                    <h2 className="text-[36px] text-white font-semibold uppercase rubik">{backgroundTitle}</h2>
-                    <p className="w-[571px] mt-2 text-[18px] text-[#BFBFBF] font-400 inter">Como relatado anteriormente, a franquia baseada no mangá escrito por ONE e ilustrado por Yusuke Murata, One Punch Man, divulgou um comunicado confirmando a produção de uma terceira temporada da adaptação para o anime […]</p>
+                <div className="flex flex-col justify-end h-full p-8 bg-gradient-to-t from-black/100 to-black/30">
+                    <h2 className="text-[14px] text-white font-semibold uppercase rubik md:text-[24px] lg:text-[36px]">{backgroundTitle}</h2>
+                    <p className="w-[300px] mt-2 text-[12px] text-[#BFBFBF] font-400 inter md:text-[14px] lg:text-[18px] lg:w-[571px]">{backgroundDescription}</p>
                 </div>
             </div>
         </section> 

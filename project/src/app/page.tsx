@@ -8,7 +8,7 @@ import { RecentData } from "@/data/RecentData"
 
 const Page = () => {
     return(
-        <div>
+        <div className="px-8 lg:px-0">
             <FilterArea />
             <Hero 
                 title="Últimas novidades"
@@ -17,8 +17,8 @@ const Page = () => {
                 backgroundTitle="ONE PUNCH MAN TERÁ 3 TEMPORADA"
                 backgroundDescription="Como relatado anteriormente, a franquia baseada no mangá escrito por ONE e ilustrado por Yusuke Murata, One Punch Man, divulgou um comunicado confirmando a produção de uma terceira temporada da adaptação para o anime […]"            
             />
-            <main className="mt-[128px] mb-[64px]">
-                <h2 className="mb-10 text-[30px] text-white font-semibold rubik">Últimas atualizações</h2>
+            <main className="mt-[50px] mb-[64px] lg:mt-[128px]">
+                <h2 className="mb-10 text-[18px] text-white font-semibold rubik md:text-[24px] lg:text-[30px]">Últimas atualizações</h2>
                 <CardArea>
                     {RecentData.map((item, key) => (
                         <CardItem 
@@ -33,8 +33,8 @@ const Page = () => {
                     />
                 </div>
             </main>
-            <section className="py-[64px] border-t border-t-[#151B26]">
-                <h1 className="mb-10 text-[30px] text-white font-semibold rubik">Animes recentes</h1>
+            <section className="pt-[64px] border-t border-t-[#151B26] lg:py-[64px]">
+                <h1 className="mb-10 text-[18px] text-white font-semibold rubik md:text-[24px] lg:text-[30px]">Animes recentes</h1>
                 <CardArea>
                     {LatestData.map((item, key) => (
                         <CardItem   
